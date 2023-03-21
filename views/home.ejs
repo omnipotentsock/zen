@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home | Zen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/zen.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <link rel="stylesheet" href="./stylesheets/home.css" />
+  </head>
+
+  <body>
+    <div class="navBar">
+      <a href="./home" id="activeLink">Home</a>
+      <a href="./students">Students</a>
+      <a href="./tests">Tests</a>
+      <a href="./logout">Log Out</a>
+    </div>
+
+    <div class="main">
+      <div class="deetCard">
+        <h2>Now logged in as:</h2>
+        <span id="name">
+          <% if(data.length){ 
+
+            for (var i = 0; i < data.length; i++){ 
+              if(data[i].loggedIn == true){ 
+                %> <%= data[i].name %> <%
+              }
+            }
+          }%>
+        </span>
+
+        <div id="pfp">
+          <% if(data.length){ 
+            for (var i = 0; i < data.length; i++){ 
+              if(data[i].loggedIn == true){ 
+                %> <%= data[i].name[0] %> <%
+              }
+            }
+          }%>
+        </div>
+
+        <table>
+          <tr id="detailRow">
+
+            <td id="deetUID">
+              UserID: <br/>
+              <% if(data.length){ 
+                for (var i = 0; i < data.length; i++){ 
+                  if(data[i].loggedIn == true){ 
+                    %> <%= data[i].loginID %> <%
+                  }
+                }
+              }%>
+            </td>
+
+            <td id="deetSubjects">
+              Subjects: <br/>
+              <% if(data.length){ 
+                for (var i = 0; i < data.length; i++){ 
+                  if(data[i].loggedIn == true){ 
+                    %> <%= data[i].subject %> <%
+                  }
+                }
+              }%>
+            </td>
+            
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

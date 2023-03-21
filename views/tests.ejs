@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tests | Zen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/zen.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <link rel="stylesheet" href="./stylesheets/tests.css" />
+  </head>
+  <body>
+    <div class="navBar">
+      <a href="./home">Home</a>
+      <a href="./students">Students</a>
+      <a href="./tests" id="activeLink">Tests</a>
+      <a href="./logout">Log Out</a>
+    </div>
+
+    <div class="main">
+      <h1>TESTS</h1>
+      <table class="testTable">
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Date of Test</th>
+          <th>Avg.</th>
+          <th>Max. Marks</th>
+          <th>Percentile</th>
+        </tr>
+
+        <% for(var i=0; i< tdata.length; i++) { if (subject == tdata[i].subject
+        || subject == "Superuser Access"){%>
+        <tr>
+          <td><%= tdata[i].name %></td>
+          <td><%= tdata[i].subject %></td>
+          <td><%= tdata[i].date %></td>
+          <td><%= tdata[i].results[0] %></td>
+          <td><%= tdata[i].results[1] %></td>
+          <td><%= tdata[i].results[2] %></td>
+        </tr>
+        <% } }%>
+      </table>
+
+      <br />
+
+      <form action="" method="post">
+        <input type="submit" value="+ Add Test +" id="newtest" />
+      </form>
+    </div>
+  </body>
+</html>

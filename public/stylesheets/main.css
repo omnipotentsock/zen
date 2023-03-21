@@ -1,0 +1,139 @@
+:root {
+  --beaver: #a88778ff;
+  --cultured: #f8f8f8ff;
+  --light-grey: #ccccccff;
+  --metallic-seaweed: #248099ff;
+  --phthalo-green: #0a210f;
+  --black-olive: #41463d;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  color: var(--phthalo-green);
+  font-weight: 400;
+  font-family: "Outfit", sans-serif;
+  overflow-x: hidden;
+}
+
+/* The sidebar menu */
+.navBar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: var(--beaver); /* Black */
+  overflow-x: hidden;
+  overflow-y: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+
+  border: solid 0px var(--phthalo-green);
+  border-radius: 0px 2em 3em 20px;
+}
+
+/* The navigation menu links */
+.navBar a {
+  padding: 3em 16px 3em 8px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 1s;
+}
+
+#activeLink {
+  pointer-events: none;
+  background-color: rgb(121, 96, 84);
+}
+
+/* When you mouse over the navigation links, change their color */
+.navBar a:hover {
+  color: white;
+  background-color: rgb(228, 190, 153);
+}
+
+/* Style page content */
+.main {
+  margin: auto;
+  width: 100%;
+
+  font-size: 2em;
+
+  text-align: center;
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+  margin-right: 200px;
+}
+
+h1 {
+  /* font-size: 3em; */
+  font-weight: bold;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .navBar {
+    padding-top: 15px;
+  }
+  .navBar a {
+    font-size: 18px;
+  }
+}
+
+a {
+  color: var(--black-olive);
+}
+
+input {
+  color: #222222;
+  font-family: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 0.7em;
+  border-radius: 0.5em;
+  border: 2px solid var(--black-olive);
+}
+
+input[type="button"],
+button {
+  padding: 0.7em;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 0.5em;
+  color: var(--cultured);
+  background-color: var(--black-olive);
+  border: 2px solid var(--black-olive);
+  transition: 0.2s ease;
+}
+
+input[type="button"]:hover {
+  background-color: white;
+  color: var(--black-olive);
+}
+
+input[type="submit"],
+button {
+  padding: 0.7em;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 0.5em;
+  color: var(--cultured);
+  background-color: var(--black-olive);
+  border: 2px solid var(--black-olive);
+  transition: 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: var(--black-olive);
+}

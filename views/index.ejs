@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Zen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/zen.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <link rel="stylesheet" href="./stylesheets/login.css" />
+  </head>
+
+  <body>
+    
+    <div id="login_page">
+      <!-- Login sidebar -->
+      <div id="login_dialog">
+        <!-- Login header -->
+        <div id="login_header">
+          <div id="login_heading">Welcome.</div>
+          <div id="login_subheading">Log In</div>
+        </div>
+
+        <!-- Login form -->
+        <div id="login_form_container">
+          <form id="login_form" action="/" method="POST">
+            <input type="email" placeholder="User Id" name="eID" id="emailID" />
+            <input type="password" name="password" placeholder="Password" id="passID"/>
+            <input type="submit" value="Enter" id="submitBtn" />
+          </form>
+        </div>
+
+        <!-- Password reset -->
+        <div id="forgot_password">
+          <a href="#">Forgot password</a>
+        </div>
+      </div>
+
+      <!-- Login feature image -->
+      <div id="login_feature_image"></div>
+    </div>
+  </body>
+
+</html>

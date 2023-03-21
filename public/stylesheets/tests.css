@@ -1,0 +1,20 @@
+body {
+  background-color: var(--cultured);
+}
+
+table {
+  border: 3px solid var(--phthalo-green);
+  border-radius: 10px;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px 10px;
+}
+
+th {
+  background-color: var(--black-olive);
+  color: white;
+}

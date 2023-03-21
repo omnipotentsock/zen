@@ -1,0 +1,54 @@
+body {
+  background-color: var(--cultured);
+}
+.main {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin: 0 auto;
+  width: 91%;
+
+  text-align: center;
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+.deetCard {
+  border: solid 2px black;
+  border-radius: 8px;
+  background-color: rgb(230, 223, 211);
+  padding: 50px 2px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#name {
+  display: block;
+  font-size: 1.25em;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+#pfp {
+  font-size: 4em;
+  margin: 18px;
+  border: 2px solid black;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.25em;
+  border-radius: 9em;
+  margin-bottom: 0.5em;
+  background-color: white;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: max-content;
+}
+
+td {
+  text-align: center;
+  width: 500px;
+}

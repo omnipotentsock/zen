@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>New Test | Zen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/zen.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+  </head>
+  <body>
+    <div class="navBar">
+      <a href="./home">Home</a>
+      <a href="./students">Students</a>
+      <a href="./tests">Tests</a>
+      <a href="./logout">Log Out</a>
+    </div>
+
+    <div class="main">
+      <h1>NEW TEST</h1>
+
+      <form action="" method="post">
+        <input
+          type="text"
+          name="testName"
+          id="textfield"
+          placeholder="Name of Test"
+        />
+        <br />
+        <input
+          type="text"
+          name="subject"
+          id="textfield"
+          placeholder="Subject"
+          value="<%= subject %>"
+        />
+        <input type="text" name="date" id="textfield" placeholder="Date" />
+
+        <br />
+
+        <input
+          type="text"
+          name="maxMarks"
+          id="textfield"
+          placeholder="Max Marks"
+        />
+        <br />
+        <input
+          type="text"
+          name="marksAtt"
+          id="textfield"
+          placeholder="Marks Attained (separated by one whitespace)"
+        />
+        <br />
+
+        <input type="submit" value="SUBMIT" />
+      </form>
+    </div>
+  </body>
+  <script src=""></script>
+</html>

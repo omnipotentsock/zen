@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>Students | Zen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/zen.png" type="image/x-icon" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">  
+	<link rel="stylesheet" href="./stylesheets/main.css">
+	<link rel="stylesheet" href="./stylesheets/students.css">
+
+</head>
+<body>
+
+    <div class="navBar">
+        <a href="./home">Home</a>
+        <a href="./students" id="activeLink">Students</a>
+        <a href="./tests">Tests</a>
+        <a href="./logout">Log Out</a>      </div>
+
+    <div class="main">
+        <div class="studentSearch">
+            <h1>STUDENTS</h1>
+
+            <div class="searchResults">
+                <% for (var i = 0; i < stdata.length; i++){
+
+                    for (var j = 0; j < stdata[i].subjects.length; j++) {
+                        
+                        if (subject == stdata[i].subjects[j] || subject == "Superuser Access"){
+                            %> <%- stdata[i].name + ", " + stdata[i].studentID + ", " + stdata[i].subjects[j] + "<br>"%> <%
+                        }
+                    } %> <br> <%
+                } %>
+            </div>
+        </div>
+    </div>
+</body>
+<script src=""></script>
+        
+</html>

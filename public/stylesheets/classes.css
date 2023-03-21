@@ -1,0 +1,26 @@
+body {
+  background-color: var(--cultured);
+}
+
+#subjectClasses {
+  padding: 12px;
+  margin-top: 4px;
+}
+
+#subjectClasses span {
+  display: block;
+
+  font-size: 27px;
+  padding: 8px;
+}
+
+.details {
+  background-color: rgb(230, 223, 211);
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid var(--phthalo-green);
+  border-radius: 8px;
+  padding: 12px;
+  padding-bottom: 64px;
+  margin-top: 4px;
+}
