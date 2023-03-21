@@ -5,7 +5,7 @@
 
 ***
 
-The application is being hosted and can be accessed [here.](https://infzen.herokuapp.com/)
+The application is being hosted and can be accessed [here.](https://inf-zen.herokuapp.com/)
 
 ***
 ## Login IDs
